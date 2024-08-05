@@ -199,6 +199,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 persist.sys.fuse.passthrough.enable=true
 
 # Graphics
+debug.sdm.support_writeback=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
