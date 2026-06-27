@@ -19,8 +19,8 @@
         "9999999",
         "1708800",
         "1324800",
-        "1113600",
-        "691200",
+        "1190400",
+        "710400",
         "576000",
         "300000"
       ],
@@ -51,9 +51,9 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "2054400",
-        "1900800",
-        "1516800"
+        "1804800",
+        "1651200",
+        "1536000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -63,11 +63,10 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "2054400",
+        "1804800",
         "1651200",
-        "1516800",
-        "1228800",
-        "691200",
+        "1017600",
+        "768000",
         "0"
       ],
       "DefaultIndex": 5,
@@ -140,7 +139,7 @@
         "0",
         "1",
         "3",
-        "5"
+        "4"
       ],
       "ResetOnInit": true
     },
@@ -221,7 +220,7 @@
       "Name": "L3LittleClusterMinFreq",
       "Path": "/sys/class/devfreq/fd90100.qcom,cpu0-cpu-l3-lat/min_freq",
       "Values": [
-        "1497600000",
+        "1459200000",
         "1171200000",
         "300000000"
       ],
@@ -231,7 +230,7 @@
       "Name": "L3BigClusterMinFreq",
       "Path": "/sys/class/devfreq/fd90100.qcom,cpu6-cpu-l3-lat/min_freq",
       "Values": [
-        "1497600000",
+        "1459200000",
         "1171200000",
         "300000000"
       ],
@@ -307,7 +306,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1516800"
+      "Value": "1536000"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -541,13 +540,13 @@
       "PowerHint": "LAUNCH",
       "Node": "L3LittleClusterMinFreq",
       "Duration": 3000,
-      "Value": "1497600000"
+      "Value": "1459200000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 3000,
-      "Value": "1497600000"
+      "Value": "1459200000"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
