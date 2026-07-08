@@ -1,0 +1,27 @@
+//
+// Copyright (C) 2023 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "MotoParts",
+    certificate: "platform",
+    srcs: ["src/**/*.java"],
+    platform_apis: true,
+    privileged: true,
+    system_ext_specific: true,
+    static_libs: [
+        "androidx.core_core",
+    ],
+    required: [
+        "privapp_whitelist_com.motorola.parts.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.motorola.parts.xml",
+    src: "permissions/privapp_whitelist_com.motorola.parts.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
+}
