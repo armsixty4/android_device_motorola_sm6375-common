@@ -21,3 +21,11 @@ ril.subscription.types=RUIM
 
 # WiFi
 ro.boot.wificountrycode=00
+
+
+# Infinity-X Props
+ro.product.marketname=Moto G84 5G
+ro.infinity.soc=Snapdragon® 695
+ro.infinity.battery=5000 mAh
+ro.infinity.display=6.55″, 120Hz, 2400x1080
+ro.infinity.camera=50MP + 8MP
