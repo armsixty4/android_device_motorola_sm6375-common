@@ -363,3 +363,15 @@ on property:vendor.hw.touch.status="ready"
 
 on property:ro.boot.revision=*
     setprop ro.boot.hardware.revision ${ro.boot.revision}
+
+# WLAN MAC address provisioning — generate a unique MAC if persist
+# partition doesn't have one, to avoid shared default MACs across devices
+service wlan_mac_provision /vendor/bin/sh /vendor/bin/init.wlan_mac.sh
+    class core
+    user root
+    group root system wifi
+    oneshot
+    disabled
+
+on post-fs-data
+    start wlan_mac_provision
