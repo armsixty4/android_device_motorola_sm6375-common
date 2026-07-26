@@ -1,0 +1,11 @@
+# Fix SELinux denials from first-boot dmesg:
+# avc: denied { set } for property=ro.vendor.camera.back.disable_radio
+#   scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_default_prop:s0
+# avc: denied { search } for name="chosen"
+#   scontext=u:r:vendor_init:s0 tcontext=u:object_r:sysfs_dt_chosen:s0
+
+# Allow vendor_init to set vendor camera properties (harmless race at boot)
+set_prop(vendor_init, vendor_default_prop)
+
+# Allow vendor_init to search /sys/firmware/devicetree/base/chosen
+allow vendor_init sysfs_dt_chosen:dir search;

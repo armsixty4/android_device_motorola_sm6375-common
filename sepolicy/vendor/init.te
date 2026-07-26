@@ -1,0 +1,6 @@
+# Fix SELinux denial from first-boot dmesg:
+# avc: denied { mounton } for path="/sys/kernel/tracing"
+#   scontext=u:r:init:s0 tcontext=u:object_r:debugfs_tracing:s0
+
+# Allow init to mount tracefs on /sys/kernel/tracing
+allow init debugfs_tracing:dir mounton;
