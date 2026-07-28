@@ -1,0 +1,2 @@
+# diag AIDL
+vendor.qti.diaghal.Idiag/default                                         u:object_r:hal_diag_service:s0

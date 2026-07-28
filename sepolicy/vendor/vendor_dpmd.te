@@ -1,0 +1,1 @@
+allow vendor_dpmd hal_diag_service:service_manager find;
